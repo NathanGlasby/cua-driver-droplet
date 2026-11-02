@@ -1,0 +1,39 @@
+{
+  "id": "cuadriver",
+  "name": "Cua Driver",
+  "version": "1.0.0",
+  "summary": "See when an agent drives your Mac, and stop it",
+  "description": "Cua Driver shows when a coding agent is driving your Mac through cua-driver. While a session is active, a live activity sits beside the notch with the session's name.\n\nThe shelf widget lists every session the driver is running, how recently each one acted, and a Stop button for each. Stop all revokes every session at once. Stopping is deny-only: it ends a session and can never grant one.\n\nNeeds cua-driver running on this Mac (cua-driver serve).",
+  "category": "Productivity",
+  "kit": {
+    "abi": 1,
+    "minAPI": "1.6.0"
+  },
+  "minAppVersion": "15.3.0",
+  "capabilities": [],
+  "surfaces": [
+    "shelf-widget",
+    "live-activity"
+  ],
+  "icon": "Cuadriver.icon",
+  "creator": {
+    "name": "Nate Glasby",
+    "kind": "community",
+    "url": "https://github.com/NathanGlasby",
+    "avatar": "Creator.png",
+    "gitlab": "your-gitlab-username"
+  },
+  "source": {
+    "repository": "https://gitlab.com/droppyformac1/droplets/-/tree/main/droplets/cuadriver",
+    "license": "MIT"
+  },
+  "screenshots": [],
+  "keywords": [
+    "cua",
+    "agent",
+    "automation",
+    "computer use",
+    "claude",
+    "mcp"
+  ]
+}

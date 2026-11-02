@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "droppykit": {
+      "command": "/Users/nate/Developer/droppykit/Scripts/droppykit",
+      "args": [
+        "mcp",
+        "--package",
+        "/Users/nate/.t3/projects/cua-driver-droplet"
+      ]
+    }
+  }
+}
