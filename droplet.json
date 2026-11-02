@@ -1,27 +1,31 @@
 {
   "id": "cuadriver",
   "name": "Cua Driver",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "summary": "See when an agent drives your Mac, and stop it",
-  "description": "Cua Driver shows when a coding agent is driving your Mac through cua-driver. While a session is active, a live activity sits beside the notch with the session's name.\n\nThe shelf widget lists every session the driver is running, how recently each one acted, and a Stop button for each. Stop all revokes every session at once. Stopping is deny-only: it ends a session and can never grant one.\n\nNeeds cua-driver running on this Mac (cua-driver serve).",
+  "description": "Cua Driver shows when a coding agent is driving your Mac through cua-driver, and stops it.\n\nWhile an agent drives, its name sits beside the notch, with a record mark while it records the screen. A card on the notch says when a new agent starts.\n\nThe shelf widget lists every session the driver is running: what kind of client it is, when it started, how long ago it last acted, and a Stop button for each. Stop every agent from the widget's header, from a keyboard shortcut that works in any app, or from a script with droppy://droplet/cuadriver/stop. Stopping only revokes a session: it never grants one anything.\n\nSettings shows whether the driver is running, its version, the permission mode it runs in, and whether it has Accessibility and Screen Recording.\n\nNeeds cua-driver on this Mac (cua-driver serve).",
   "category": "Productivity",
   "kit": {
     "abi": 1,
-    "minAPI": "1.6.0"
+    "minAPI": "1.16.0"
   },
   "minAppVersion": "15.3.0",
-  "capabilities": [],
+  "capabilities": [
+    "hud",
+    "global-shortcuts"
+  ],
   "surfaces": [
     "shelf-widget",
-    "live-activity"
+    "live-activity",
+    "hud",
+    "settings-pane"
   ],
   "icon": "Cuadriver.icon",
   "creator": {
     "name": "Nate Glasby",
     "kind": "community",
     "url": "https://github.com/NathanGlasby",
-    "avatar": "Creator.png",
-    "gitlab": "your-gitlab-username"
+    "avatar": "Creator.png"
   },
   "source": {
     "repository": "https://gitlab.com/droppyformac1/droplets/-/tree/main/droplets/cuadriver",
@@ -30,10 +34,14 @@
   "screenshots": [],
   "keywords": [
     "cua",
+    "cua-driver",
     "agent",
     "automation",
     "computer use",
     "claude",
-    "mcp"
+    "codex",
+    "mcp",
+    "stop",
+    "safety"
   ]
 }
