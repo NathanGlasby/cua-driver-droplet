@@ -95,6 +95,5 @@ To try it in Droppy Playground, copy `.build/Cuadriver.droplet` to `~/Library/Ap
 ## Before submitting to the Store
 
 - `Cuadriver.icon` is a placeholder, and the Droppy team designs Store icons. Icon idea for the merge request: the `cursorarrow.rays` SF Symbol, maybe with a stop mark.
-- Replace `assets/Creator.png` with your own avatar. The Store expects it at `Assets/Creator.png`.
 - `droppykit submit` fills in `creator.gitlab` from your signed-in `glab` account.
 - The droplet connects to a local Unix socket that belongs to another app. No DroppyKit capability covers that, so ask the Droppy team about it in the merge request.
