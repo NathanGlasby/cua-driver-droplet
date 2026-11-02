@@ -67,6 +67,15 @@ The droplet reads session labels, client kinds and timings from the daemon. It n
 - cua-driver running on the same Mac (`cua-driver serve`, or any agent that starts it)
 - Droppy 15.3 or later
 
+## Install
+
+Cua Driver isn't in the Droppy Store yet, so for now you install a build from [Releases](../../releases).
+
+1. Download `Cuadriver-<version>.droplet.zip` from the latest release and unzip it. You get `Cuadriver.droplet`.
+2. In Droppy, open Settings › Store › Local droplets, add `Cuadriver.droplet` and approve it.
+
+This build isn't signed by Droppy, so Droppy asks you to approve it again each time it opens. [Droppy Playground](https://getdroppy.app/download/playground) runs it without asking: put it in `~/Library/Application Support/Droppy Playground/Droplets/cuadriver/` and relaunch the Playground. Once the droplet is in the Store, Droppy signs it and the prompt goes away.
+
 ## Developing
 
 Set up the DroppyKit SDK first ([Add the package](https://getdroppy.app/docs/droppykit/add-spm)), then:

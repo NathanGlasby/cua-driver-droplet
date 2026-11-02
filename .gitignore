@@ -4,3 +4,4 @@
 shots/
 # The Store resolves DroppyKit from the version Package.swift names.
 Package.resolved
+dist/
